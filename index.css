@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+  }
+
+  .container {
+    display:flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+ 
+  .sidebar {
+    width: 30%;
+    background-color: #2a2f32;
+    color: #e9edef;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-header {
+    padding: 15px;
+    background-color: #33383b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebar-header h2 {
+    font-size: 1.2em;
+    color: #e9edef;
+  }
+
+  .sidebar-header .icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .sidebar-header .icon {
+    width: 20px;
+    height: 20px;
+    background-color: #6c757d;
+    border-radius: 50%;
+  }
+
+  .sidebar-search {
+    padding: 10px;
+    background-color: #202c33;
+  }
+
+  .sidebar-search input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #33383b;
+    color: #e9edef;
+    font-size: 0.9em;
+  }
+
+  .filter-buttons {
+    display: flex;
+    padding: 10px;
+    gap: 8px;
+    background-color: #202c33;
+    color: #e9edef;
+  }
+
+  .buttons button {
+    background: none;
+    color: #e9edef;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+
+  .chat-list {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+  .chat-item {
+    padding: 15px;
+    border-bottom: 1px solid #3b4a54;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .chat-item:hover {
+    background-color: #3a4c53;
+  }
+
+  .chat-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .chat-info {
+    flex-grow: 1;
+  }
+
+  .chat-info h3 {
+    font-size: 1em;
+    color: #e9edef;
+  }
+
+  .chat-info p {
+    font-size: 0.9em;
+    color: #aebac1;
+  }
+
+  .timestamp {
+    font-size: 0.8em;
+    color: #aebac1;
+  }
+
+  
+  .chat-window {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #0d1418;
+  }
+
+  .chat-header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #202c33;
+    color: #e9edef;
+  }
+
+  .chat-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .chat-header h3 {
+    font-size: 1em;
+  }
+
+  .chat-messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: url('https://i.imgur.com/6J3xarB.png');
+    background-size: cover;
+  }
+
+  .message {
+    margin-bottom: 10px;
+    max-width: 60%;
+    position: relative;
+    font-size: 0.9em;
+  }
+
+  .message p {
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+
+  .message.sent p {
+    background-color: #005c4b;
+    color: #fff;
+    text-align: right;
+  }
+
+  .message.received p {
+    background-color: #202c33;
+    color: #e9edef;
+  }
+
+  .message .time {
+    font-size: 0.8em;
+    color: #ccc;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+  }
+
+  .chat-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #202c33;
+  }
+
+  .chat-footer input {
+    flex-grow: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #33383b;
+    color: #e9edef;
+    margin-right: 10px;
+    font-size: 0.9em;
+  }
+
+  .chat-footer button {
+    padding: 10px;
+    background-color: #128c7e;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+  }
+  .navigation{
+      color: rgb(184, 184, 184);
+      text-decoration: none;
+      border-radius: 12px;
+      padding: 5px;
+      background-color: #4f4f4f;
+  }
+  .Contact-1{
+      color: white;
+      text-decoration: none;
+  }
